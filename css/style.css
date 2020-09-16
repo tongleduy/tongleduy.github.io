@@ -1,0 +1,315 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+@font-face{
+	src: url("../font/calibri.ttf");
+	font-family: ca;
+}
+@font-face{
+	src: url("../font/calibrib.ttf");
+	font-family: cabold;
+}
+html{
+	scroll-behavior: smooth;
+}
+.wrapper{
+	width: 100%;
+	height: auto;
+	background: red;
+	margin: 0 auto;
+	overflow-x: scroll;
+}
+.content{
+	width: 80%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.header{
+	width: 100%;
+	height: 60px;
+	background-color:rgba(20,138,160,1.00);
+	position: absolute;
+	z-index: 11000000;
+	position: fixed;
+}
+.logo{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-left: 200px;
+}
+.logo img{
+	margin-top: 5px;
+}
+.menu{
+	width: 700px;
+	height: 60px;
+/*	background-color: green;*/
+	float: right;
+	padding-right: 0;
+	font-family: ca;
+}
+.menu ul{
+	margin: 0 auto;
+}
+.menu ul li{
+	float:left;
+	list-style: none;
+/*	width: 100px;*/
+/*	height: 60px;*/
+/*	background: black;*/
+	line-height: 60px;
+	text-align: center;
+	padding-left: 50px;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+.menu ul li:hover a{
+/*	border-bottom: 1px solid rgba(255,255,255,1.00)*/
+	color: black;
+}
+.home{
+			width: 100%;
+			height: 100vh;
+			background: url("../img/IMG_0038 2.jpg");
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			position: relative;
+			z-index: 1;
+		}
+		.hello{
+			width: 80%;
+			height: 200px;
+		/*	background: rgba(182,56,58,1.00);*/
+			z-index: 999;
+			margin: 0 auto;
+			text-align: center;
+			box-sizing: border-box;
+			padding-top: 300px;
+			color: white;
+		}
+		.hello h1{
+			font-size: 100px;
+			font-family: cabold;
+		}
+		.hello h4{
+			font-size: 40px;
+			font-family: ca;
+			font-weight: 200;
+			letter-spacing:8px
+		}
+.title{
+	width: 100%;
+	height: 100px;
+	font-family: cabold;
+/*	background: yellow;*/
+	text-align: center;
+	line-height: 100px;
+	box-sizing: border-box;
+	font-size: 40px;
+	position: absolute;
+	margin-top: 100px;
+	color: rgba(20,138,160,1.00);
+}
+.about{
+	width: 100%;
+	height: 100vh;
+	background: url("../img/2_3.png");
+	background-size: cover;
+	position: relative;
+	z-index: 10000;
+	top: -130px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+		.aboutpic{
+			width: 300px;
+			height: 300px;
+			background: url("../img/ava 2.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			box-sizing: border-box;
+			margin-top: 230px;
+			margin-left: 270px;
+			float: left;
+			border-radius: 50%;
+		}
+
+		.abouttext{
+			width: 470px;
+			height: 450px;
+		/*	background: rgba(17,163,160,1.00);*/
+			margin-top: 260px;
+			float: right;
+			padding-right: 60px;
+		}
+		.icon{
+			width: 500px;
+			height: 40px;
+		/*	background: red;*/
+			position: relative;
+			padding-bottom: 30px;
+		}
+		.icon .main{
+			position: absolute;
+			z-index: 2;
+		}
+		.icon .hov{
+			position: absolute;
+			z-index: 3;
+			visibility: hidden;
+		}
+		.icon:hover .hov{
+			visibility: visible;
+		}
+		.textabout{
+			height: auto;
+			width: auto;
+			padding-left: 60px;
+			font-size: 13px;
+			font-family: ca;
+			line-height: 50px;
+			color: rgba(20,138,160,1.00)
+		}
+.skills{
+	width: 100%;
+	height: 100vh;
+	background: url("../img/4.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 99;
+	top: -130px;
+	box-sizing: border-box;
+	font-family: ca;
+	color: rgba(20,138,160,1.00)
+}
+.skilltitle{
+	width: 40%;
+	height: auto;
+	float: left;
+	margin-top: 200px;
+	font-size: 40px;
+	font-family: cabold;
+	margin-left: 200px;
+}
+.skillbar{
+	width: 450px;
+	height: 200px;
+	float: right;
+/*	background: yellow;*/
+/*	position: absolute;*/
+/*	margin-left: 800px;*/
+	margin-top: 200px;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #EEE;
+  padding: 5px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: rgba(20,138,160,1.00);
+  display: inline-block;
+  padding: 10px 0 10px 10px;
+  border-radius: inherit;
+  animation: load 7s 0s;
+  -webkit-animation: load 7s 0s;
+  -moz-animation: load 7s 0s;
+  -o-animation: load 7s 0s;
+}
+
+.bar.front::before{
+  background-color: #ffcc33;
+}
+.bar.back::before{
+  background-color: #a6cfe3;
+}
+
+.bar.Ai::before{
+  width: calc(94% - 10px);
+}
+.bar.Photoshop::before{
+  width: calc(91% - 10px);
+}
+.bar.indesign::before{
+  width: calc(80% - 10px);
+}
+.bar.lightroom::before{
+  width: calc(76% - 10px);
+}
+.bar.premiere::before{
+  width: calc(60% - 10px);
+}
+.project{
+	width: 100%;
+	height: 100vh;
+	background-color: powderblue;
+	z-index: 1000;
+	position: relative;
+	margin-top: -150px;
+}
+			.projectbox
+			{
+				width: 980px;
+				height: 600px;
+				margin-top: 100px;
+				box-sizing: border-box;
+				background: url("../img/san pham.png");
+				background-size: cover;
+				background-position: center;
+				position: absolute;
+				float: left;
+				margin-left: 100px;
+			}
+.projecttitle{
+	width: 100%;
+	height: 100px;
+	font-family: cabold;
+/*	background: yellow;*/
+	text-align: center;
+	line-height: 100px;
+	box-sizing: border-box;
+	font-size: 40px;
+	position: absolute;
+/*	margin-top: 100px;*/
+	color: rgba(20,138,160,1.00);
+	padding-bottom: 40px;
+}
+
+
